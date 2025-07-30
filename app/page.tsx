@@ -10,8 +10,8 @@ import CTA from '../components/CTA';
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen bg-white">
-      <main className="flex flex-col">
+    <div className="w-full min-h-screen">
+      <div className="flex flex-col">
         <Hero />
         <Proof />
         <HowItWorks />
@@ -19,7 +19,7 @@ export default function Home() {
         <Pricing />
         <FAQ />
         <CTA />
-      </main>
+      </div>
     </div>
   );
 }
