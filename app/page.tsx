@@ -1,9 +1,25 @@
 'use client';
 
+import Hero from '../components/Hero';
+import Features from '../components/Features';
+import HowItWorks from '../components/HowItWorks';
+import Proof from '../components/Proof';
+import Pricing from '../components/Pricing';
+import FAQ from '../components/FAQ';
+import CTA from '../components/CTA';
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">DischargeMate</h1>
-    </main>
-  )
+    <div className="w-full min-h-screen bg-white">
+      <main className="flex flex-col">
+        <Hero />
+        <Proof />
+        <HowItWorks />
+        <Features />
+        <Pricing />
+        <FAQ />
+        <CTA />
+      </main>
+    </div>
+  );
 }
